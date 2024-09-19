@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #001c35;
+    color: #ecf0f1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial, sans-serif';
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.title {
+    font-size: 3em;
+    color: #2ecc71;
+    animation: slideIn 1.2s ease-out;
+}
+
+.target {
+    font-size: 1.5em;
+    color: #f39c12;
+    margin-top: 10px;
+}
+
+.numbersContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+.numberButton {
+    font-size: 2em;
+    margin: 0 10px;
+    padding: 20px;
+    border-radius: 50%;
+    border: none;
+    color: #fff;
+    background-color: #2980b9;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+}
+
+.numberButton:hover {
+    background-color: #3498db;
+    transform: translateY(-5px);
+}
+
+.selected {
+    background-color: #f39c12 !important;
+}
+
+.operationsContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    animation: fadeInDown 0.8s ease-in-out;
+}
+
+.operationButton {
+    font-size: 2em;
+    margin: 0 10px;
+    padding: 20px;
+    border-radius: 50%;
+    border: none;
+    color: #fff;
+    background-color: #8e44ad;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.operationButton:hover {
+    background-color: #9b59b6;
+}
+
+.active {
+    background-color: #e74c3c !important;
+}
+
+.calculateButton {
+    font-size: 2em;
+    padding: 15px 30px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.calculateButton:hover {
+    background-color: #c0392b;
+}
+
+.messageContainer {
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.message {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #f39c12;
+}
+
+.newGameButton {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newGameButton:hover {
+    background-color: #3498db;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

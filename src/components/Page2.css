@@ -1,0 +1,97 @@
+.App1 {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    min-height: 100vh;
+    background-color: #07192f;
+}
+
+.word-image {
+    width: 400px;
+    height: 300px;
+    margin-bottom: 20px;
+    border-radius: 5%;
+}
+
+.audio-button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.input-field {
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    width: 250px;
+}
+
+.keyboard-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+    max-width: 600px;
+}
+
+.keyboard-key {
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.keyboard-key:active {
+    background-color: #ccc;
+}
+
+.delete-key {
+    grid-column: span 2;
+    background-color: #f44336;
+    color: #fff;
+}
+
+.writing-pad-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.canvas-button {
+    padding: 10px 20px;
+    background-color: #004d67;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.canvas-button:active {
+    background-color: #003b52;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.submit-button1,
+.next-button1 {
+    padding: 10px 20px;
+    font-size: 17px;
+    cursor: pointer;
+    background-color: rgb(77, 201, 239);
+    color: black;
+    font-style: bold;
+}

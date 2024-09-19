@@ -1,0 +1,88 @@
+.home-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: #07192f;
+  }
+  
+  .box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 150px;
+    column-gap: 200px;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+  }
+  
+  .box {
+    width: 250px; /* Set the same width and height for a circle */
+    height: 250px;
+    background-color: white;
+    color: #07192f;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    border-radius: 50%; /* Make the box circular */
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden; /* Hide any part of the image that extends beyond the circle */
+  }
+  
+  .box:hover {
+    transform: scale(1.05);
+    background-color: #357ab8;
+  }
+  
+  .box:nth-child(1) {
+    background-image: url('https://img.freepik.com/premium-vector/champion-winner-circle-icon-123-vector-illustration_945339-1436.jpg');
+    background-size: cover; /* Cover the entire box */
+    background-position: center; /* Center the image */
+    color: transparent; /* Hide the text initially */
+  }
+  
+  .box:nth-child(2) {
+    background-image: url('https://thumbs.dreamstime.com/b/cartoon-image-abc-letters-artistic-freehand-picture-91499924.jpg');
+    background-size: cover; /* Cover the entire box */
+    background-position: center; /* Center the image */
+    color: transparent; /* Hide the text initially */
+  }
+  
+  .box:nth-child(3) {
+    background-image: url('https://thumbs.dreamstime.com/b/opposite-big-small-vector-illustration-opposite-big-small-115565057.jpg');
+    background-size: cover; /* Cover the entire box */
+    background-position: center; /* Center the image */
+    color: transparent; /* Hide the text initially */
+  }
+  
+  .box:nth-child(4) {
+    background-image: url('https://happytotshelf.com/wp-content/uploads/2023/07/Featured-Image_Shape-Activities.jpg');
+    background-size: cover; /* Cover the entire box */
+    background-position: center; /* Center the image */
+    color: transparent; /* Hide the text initially */
+  }
+  
+  .box:nth-child(5) {
+    background-image: url('https://thumbs.dreamstime.com/b/cartoon-charactor-business-graph-27391692.jpg');
+    background-size: cover; /* Cover the entire box */
+    background-position: center; /* Center the image */
+    color: transparent; /* Hide the text initially */
+  }
+  
+  .box:nth-child(6) {
+    background-image: url('https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/86/f0/3e/86f03ed3-41b3-b0a5-4212-60d40cda5f86/source/512x512bb.jpg');
+    background-size: cover; /* Cover the entire box */
+    background-position: center; /* Center the image */
+    color: transparent; /* Hide the text initially */
+  }
+  
+  .box:hover {
+    color: white; /* Show text on hover */
+  }
+  

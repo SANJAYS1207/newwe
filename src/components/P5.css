@@ -1,0 +1,176 @@
+/* Set background color for the whole page */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #07192f;
+    /* Dark blue background */
+    color: #ffffff;
+    /* White text color for contrast */
+    font-family: Arial, sans-serif;
+    /* Ensure consistent font across browsers */
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+/* Increased the width of the info box and the font size of its content */
+.info {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #a9dff1;
+    color: #000000;
+    padding: 15px;
+    width: 200px;
+    /* Increased width */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    /* Increased font size */
+    text-align: left;
+}
+
+
+.info p {
+    margin: 0;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 20px;
+    /* Increased font size of text inside */
+}
+
+
+.info p:first-child {
+    /* Total Levels */
+    display: block;
+    color: #000000;
+
+}
+
+
+.info p:nth-child(2) {
+    /* Levels Completed */
+    color: #075f1d;
+    display: block;
+}
+
+
+.info p:last-child {
+    /* Levels Remaining */
+    display: block;
+    color: #820606;
+}
+
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-grow: 1;
+}
+
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: #ffffff;
+    /* White text color for heading */
+}
+
+
+.grid {
+    display: grid;
+    gap: 10px;
+    /* Increased gap between cells */
+    justify-content: center;
+}
+
+
+.row {
+    display: contents;
+}
+
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #000;
+    font-size: 30px;
+    /* Increased font size */
+    cursor: pointer;
+    border: 2px solid #000;
+    transition: transform 0.3s;
+    width: 70px;
+    /* Increased width of the cell */
+    height: 70px;
+    /* Increased height of the cell */
+    border-radius: 8px;
+    /* Rounded corners for cells */
+}
+
+
+.cell:hover {
+    transform: scale(1.1);
+}
+
+
+.highlight {
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+
+.submit-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #43a047;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.submit-button:hover {
+    background-color: #388e3c;
+}
+
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-top: 20px;
+}
+
+
+.previous-button,
+.next-button123 {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.previous-button:hover,
+.next-button123:hover {
+    background-color: #1565c0;
+}

@@ -1,0 +1,85 @@
+.App {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.App-header {
+    background-color: #282c34;
+    padding: 20px;
+    color: white;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    flex-direction: column;
+    /* Align elements in a column */
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.icon-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center items in the column */
+    gap: 20px;
+    padding: 10px;
+}
+
+.icon-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Center content inside the item */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #007BFF;
+    cursor: pointer;
+    width: 750px;
+    height: 80px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.icon-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.icon-item span {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Hover effect */
+.icon-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    margin-top: 20px;
+}
+
+.back-button:hover {
+    background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+    transform: scale(1.05);
+}

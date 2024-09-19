@@ -1,0 +1,18 @@
+/* src/components/Imagedisplay.css */
+.imag-display {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 50vh; /* Adjust as needed */
+    margin: 200px ; /* Space around the image */
+  }
+  
+  .imag-display img {
+    display: flex;
+    width: 480px;
+    height: 400px; /* Ensure the image scales properly */
+     /* Maintain aspect ratio */
+    border-radius: 30px; /* Optional: for rounded corners */
+    justify-content: center;
+  }
+  

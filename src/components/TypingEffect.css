@@ -1,0 +1,19 @@
+/* TypingEffect.css */
+.typing-effect {
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    border-right: 2px solid white; /* Cursor effect */
+    white-space: nowrap;
+    overflow: hidden;
+    animation: blinkCursor 0.7s step-end infinite;
+  }
+  
+  @keyframes blinkCursor {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: white;
+    }
+  }
+  

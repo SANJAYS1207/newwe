@@ -1,0 +1,49 @@
+/* src/P3.css */
+.o {
+  text-align: center;
+  padding: 20px;
+  background-color: #07192f; /* Same as body background */
+  height: 110vh;
+  
+}
+.sidebar {
+  background-color: #07192f; /* Same as body background */
+  /* Other sidebar styles go here */
+}
+
+.o {
+  background-color: #07192f; /* Same as body background */
+  /* Other main content styles go here */
+}
+
+.next-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.next-button:hover {
+  background-color: #0056b3;
+}
+/* src/P3.css */
+.o {
+  text-align: center;
+  padding: 20px;
+  background-color: #07192f; /* Same as body background */
+}
+
+/* Your existing footer styles */
+.footer {
+  background-color: #07192f; /* Same as body background */
+  /* Other footer styles go here */
+}
+@media screen and (max-width: 700px) {
+}
